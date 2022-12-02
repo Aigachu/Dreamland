@@ -22,7 +22,7 @@
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
-        "drupal/harmonize": "^2.0@beta",
+        "drupal/harmonize": "3.x-dev",
         "drush/drush": "^11.3"
     },
     "conflict": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3d2561af7b1dbda2c228e3a16bcd0d2",
+    "content-hash": "03d8884e572f54bb03cb81fc8bd48088",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1731,31 +1731,32 @@
         },
         {
             "name": "drupal/harmonize",
-            "version": "2.0.0-beta8",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/harmonize.git",
-                "reference": "2.0.0-beta8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/harmonize-2.0.0-beta8.zip",
-                "reference": "2.0.0-beta8",
-                "shasum": "98c289fa9194f0c14827d7ca2e9e6b22465a1ac7"
+                "reference": "2f4d042bcb18805e37999c710551568d933bd325"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/preprocessors": "^2.0@alpha",
+                "drupal/core": ">=9.3 <11",
                 "php": ">=7.4"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
-                    "version": "2.0.0-beta8",
-                    "datestamp": "1668545335",
+                    "version": "3.x-dev",
+                    "datestamp": "1670021146",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
+                    }
+                },
+                "patches": {
+                    "drupal/core": {
+                        "2922677 - Uncaught TypeError: Cannot read property 'replace' of undefined": "https://www.drupal.org/files/issues/2021-10-07/2922677-24.patch"
                     }
                 }
             },
@@ -1794,70 +1795,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/harmonize",
                 "issues": "https://www.drupal.org/project/issues/harmonize?version=8.x"
-            }
-        },
-        {
-            "name": "drupal/preprocessors",
-            "version": "2.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/preprocessors.git",
-                "reference": "2.0.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/preprocessors-2.0.0-alpha1.zip",
-                "reference": "2.0.0-alpha1",
-                "shasum": "6091f76c8c85074eb3da3717ca09fd6221d2cba8"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "php": ">=7.4"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.0-alpha1",
-                    "datestamp": "1611081656",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "ksere",
-                    "homepage": "https://www.drupal.org/u/ksere",
-                    "email": "kyleserebour@hotmail.com",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "marcolivierfortin",
-                    "homepage": "https://www.drupal.org/user/2605822"
-                },
-                {
-                    "name": "nbeaucage",
-                    "homepage": "https://www.drupal.org/user/3478933"
-                },
-                {
-                    "name": "pascalrioux",
-                    "homepage": "https://www.drupal.org/user/3479377"
-                }
-            ],
-            "description": "Provides a method to better organize preprocessing of variables before theme template rendering.",
-            "homepage": "https://www.drupal.org/project/preprocessors",
-            "keywords": [
-                "Drupal",
-                "Theming"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/preprocessors",
-                "issues": "https://www.drupal.org/project/issues/preprocessors?version=8.x"
             }
         },
         {
@@ -6590,7 +6527,7 @@
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": {
-        "drupal/harmonize": 10
+        "drupal/harmonize": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -1,0 +1,14 @@
+rules:
+  node:
+    rules:
+      field_type:
+        excluded: true
+    bundles:
+      article:
+        rules:
+          body:
+            excluded: true
+      page:
+        rules:
+          body:
+            excluded: true
