@@ -1,0 +1,22 @@
+uuid: 82bc10fd-959e-4fe6-8313-c795a1e3f4bb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dreamland_theme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: dreamland_theme_primary_local_tasks
+theme: dreamland_theme
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

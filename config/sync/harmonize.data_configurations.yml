@@ -1,0 +1,38 @@
+harmonize_entity_settings:
+  node:
+    harmonize_entity_type_excluded_fields:
+      field_type: field_type
+      body: 0
+    article:
+      harmonize_entity_type_bundle_excluded_fields:
+        body: body
+        field_type: 0
+    page:
+      harmonize_entity_type_bundle_excluded_fields:
+        body: body
+  taxonomy_term:
+    harmonize_entity_type_excluded_fields: {  }
+    article_type:
+      harmonize_entity_type_bundle_excluded_fields: {  }
+  file:
+    harmonize_entity_type_excluded_fields: {  }
+    file:
+      harmonize_entity_type_bundle_excluded_fields: {  }
+menu_settings:
+  admin: 0
+  footer: 0
+  main: 0
+  tools: 0
+  account: 0
+region_settings:
+  header: 0
+  primary_menu: 0
+  secondary_menu: 0
+  page_top: 0
+  page_bottom: 0
+  featured: 0
+  breadcrumb: 0
+  content: 0
+  sidebar_first: 0
+  sidebar_second: 0
+  footer: 0

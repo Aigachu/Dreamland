@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: qW-8MbY-vzGg-2d4SRJPIIcd5LLtVGi5TM7GNIFHma0
+auto_preprocess: 1
+harmony_file_discovery: 1
+remove_field_underscore_prefix: 0
+max_recursive_depth: '3'
