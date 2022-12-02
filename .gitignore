@@ -1,0 +1,29 @@
+# Ignore binaries.
+/bin
+
+# Ignore non-custom parts of Drupal.
+/web/core
+/web/libraries
+/web/modules/contrib
+/web/profiles/contrib
+/web/themes/contrib
+/web/sites/default/files
+!/web/sites/default/files/private
+
+# Ignore Composer-managed dependencies.
+vendor/
+
+# Ignore some global directories
+phpmyadmin
+persistent_db
+node_modules
+bower_components
+*.DS_Store
+
+# Ignore PHPStorm generated files.
+.idea
+
+# vscode configuration
+/.vscode
+/.ddev/xdebug
+/.ddev/php
