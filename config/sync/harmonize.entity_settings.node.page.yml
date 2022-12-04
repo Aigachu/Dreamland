@@ -1,0 +1,14 @@
+uuid: 449251d5-6ca4-4e8a-b0c0-6fa684bdadb1
+langcode: en
+status: true
+dependencies: {  }
+id: node.page
+populate_variables: true
+display_filtering: true
+display_settings:
+  default:
+    body: false
+    field_featured_articles: true
+  teaser:
+    body: true
+    field_featured_articles: true

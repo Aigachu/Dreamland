@@ -3,3 +3,8 @@ _core:
 harmony_file_discovery: true
 remove_field_underscore_prefix: false
 auto_preprocess: true
+extension_loading_algorithm: fcfs
+allowed_admin_routes: {  }
+auto_harmonized_entities:
+  - media
+  - taxonomy_term

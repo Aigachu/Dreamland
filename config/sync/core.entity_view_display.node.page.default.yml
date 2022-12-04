@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_featured_articles
     - node.type.page
   module:
     - text
@@ -19,6 +20,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_featured_articles:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }
