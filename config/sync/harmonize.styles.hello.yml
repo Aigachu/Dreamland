@@ -1,0 +1,10 @@
+uuid: b41ce730-ece9-4985-8f49-e117b7bd1412
+langcode: en
+status: true
+dependencies: {  }
+id: hello
+label: Hello
+fields:
+  - field_type
+  - field_media_image
+  - field_baba

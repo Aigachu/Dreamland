@@ -9,6 +9,8 @@ display_settings:
   default:
     body: false
     field_featured_articles: true
+    field_related_articles: true
+    field_baba: false
   teaser:
     body: true
     field_featured_articles: true

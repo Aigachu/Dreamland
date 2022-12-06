@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_baba
     - field.field.node.page.field_featured_articles
+    - field.field.node.page.field_related_articles
     - node.type.page
   module:
     - text
@@ -21,6 +23,14 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_baba:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
   field_featured_articles:
     type: entity_reference_entity_view
     label: hidden
@@ -29,6 +39,14 @@ content:
       link: false
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_related_articles:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
     region: content
   links:
     settings: {  }

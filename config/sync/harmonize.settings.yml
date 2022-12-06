@@ -8,3 +8,4 @@ allowed_admin_routes: {  }
 auto_harmonized_entities:
   - media
   - taxonomy_term
+loading_algorithm: fcfs

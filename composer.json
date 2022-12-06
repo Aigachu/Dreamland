@@ -19,11 +19,12 @@
         "drupal/admin_toolbar": "^3.3",
         "drupal/adminimal_admin_toolbar": "^1.11",
         "drupal/adminimal_theme": "^1.6",
+        "drupal/coder": "^8.3",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/devel": "^5.0",
-        "drupal/harmonize": "3.x-dev",
+        "drupal/harmonize": "^3.0.0",
         "drupal/rabbit_hole": "^1.0@beta",
         "drush/drush": "^11.3"
     },
@@ -97,5 +98,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7"
     }
 }

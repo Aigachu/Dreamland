@@ -1,0 +1,10 @@
+name: 'Dreamland Refiners'
+type: module
+description: 'Helper wrapper module for Harmonize module Refiners.'
+package: 'Dreamland'
+
+core_version_requirement: '^8 || ^9'
+version: '9.0.0'
+
+dependencies:
+  - harmonize:harmonize

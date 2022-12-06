@@ -1,0 +1,19 @@
+uuid: 552af4ce-cc98-4765-a3b1-7777f01976b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_baba
+    - node.type.page
+id: node.page.field_baba
+field_name: field_baba
+entity_type: node
+bundle: page
+label: Baba
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

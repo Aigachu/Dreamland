@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
+    - field.field.node.article.field_thumbnail
     - field.field.node.article.field_type
     - node.type.article
   module:
@@ -29,5 +30,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_thumbnail: true
   field_type: true
   langcode: true

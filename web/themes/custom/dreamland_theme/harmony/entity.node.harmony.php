@@ -26,6 +26,4 @@ use Drupal\harmonize\Service\Harmonics;
  */
 
 // The same alterations we did earlier, but in a harmony file!
-if (isset($consignment['field_related_articles'])) {
-  $consignment['related_article_count'] = count($consignment['field_related_articles']);
-}
+// $consignment['related_article_count'] = count($consignment['field_related_articles']);

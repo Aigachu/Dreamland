@@ -25,5 +25,9 @@ function dreamland_theme_preprocess_page(&$variables) {
  * Implements hook_preprocess_HOOK() for node.html.twig.
  */
 function dreamland_theme_preprocess_node(&$variables) {
-  dump($variables);
+  // Manually process nested entities.
+  $variables['harmony']['field_related_articles'] = array_map(function ($articleHarmonizer) {
+    return $articleHarmonizer->harmonize();
+  }, $variables['harmony']['field_related_articles']);
+  dump($variables['harmony']);
 }
