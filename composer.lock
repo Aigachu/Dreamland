@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d4679c2339bbaf75db8d1ace7525b56",
+    "content-hash": "170bf59a9a9b4226e9d0808957fed284",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2520,17 +2520,11 @@
         },
         {
             "name": "drupal/harmonize",
-            "version": "3.0.0",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/harmonize.git",
-                "reference": "3.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/harmonize-3.0.0.zip",
-                "reference": "3.0.0",
-                "shasum": "c7fe44447b9190872dd0875a4efabbeed2c5aea2"
+                "reference": "a368fce004320019710d43293b2569b0cc156e86"
             },
             "require": {
                 "drupal/core": ">=9.3 <11",
@@ -2541,12 +2535,15 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
-                    "version": "3.0.0",
-                    "datestamp": "1670347350",
+                    "version": "3.0.1+4-dev",
+                    "datestamp": "1670968688",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
                 "patches": {
@@ -7615,6 +7612,7 @@
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": {
+        "drupal/harmonize": 20,
         "drupal/rabbit_hole": 10
     },
     "prefer-stable": true,

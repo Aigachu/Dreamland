@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Override & customize data harmonizations for a given Drupal object or entity.
+ *
+ * @harmonizerType entity
+ * @entityType node
+ * @bundle page
+ *
+ * This is a custom file to handle the reformatting of data before it reaches
+ * Drupal templates.
+ *
+ * Available variables:
+ * @var array $consignment
+ *    The data array (modify in place).
+ *    This is comparable to the '$variables' array in preprocess functions.
+ * @var array $harmony
+ *    The final data that CAN be returned to the Twig template.
+ *    Usage of this variable is optional, and it is empty by default.
+ *    If this is left empty, then the data in $consignment will be returned.
+ * @var \Drupal\harmonize\Service\Harmonics $harmonics
+ *    The Harmonics service which contains helper functions.
+ *
+ * You have the choice to either modify the $consignment array which contains
+ * the default data, or assign new data to the empty $harmony variable. If
+ * $harmony is empty by the end of this file, $consignment will be sent to
+ * templates. Otherwise, $harmony will be sent to templates.
+ */
+
+// The same alterations we did earlier, but in a harmony file!
+//if (isset($consignment['field_related_articles'])) {
+//  $consignment['related_article_count'] = count($consignment['field_related_articles']);
+//}

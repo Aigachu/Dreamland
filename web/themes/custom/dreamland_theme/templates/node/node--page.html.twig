@@ -100,25 +100,25 @@
 
 
 
-{#  <div{{ content_attributes.addClass('node__content') }}>#}
-{#    {% for articleFieldValue in node.field_related_articles[0:3] %}#}
-{#      <img#}
-{#        src="{{ file_url(articleFieldValue.entity.field_thumbnail.entity.field_media_image.entity.fileuri) }}"#}
-{#        alt="{{ articleFieldValue.entity.field_thumbnail.entity.field_media_image.alt }}"#}
-{#        title="{{ articleFieldValue.entity.field_thumbnail.entity.field_media_image.title }}"#}
-{#      />#}
-{#    {% endfor %}#}
-{#  </div>#}
-
   <div{{ content_attributes.addClass('node__content') }}>
-    {% for article in harmony.field_related_articles[0:3] %}
-      {# 'article' here is a NodeHarmonizer. We can call |get to get field values for this entity. #}
+    {% for articleFieldValue in node.field_related_articles[0:3] %}
       <img
-        src="{{ article|get('field_thumbnail').field_media_image.attributes.src }}"
-        alt="{{ article|get('field_thumbnail').field_media_image.attributes.alt }}"
-        title="{{ article|get('field_thumbnail').field_media_image.attributes.title }}"
+        src="{{ file_url(articleFieldValue.entity.field_thumbnail.entity.field_media_image.entity.fileuri) }}"
+        alt="{{ articleFieldValue.entity.field_thumbnail.entity.field_media_image.alt }}"
+        title="{{ articleFieldValue.entity.field_thumbnail.entity.field_media_image.title }}"
       />
     {% endfor %}
   </div>
+
+{#  <div>#}
+{#    {% for article in harmony.field_related_articles[0:3] %}#}
+{#      #}{# 'article' here is a NodeHarmonizer. We can call |get to get field values for this entity. #}
+{#      <img#}
+{#        src="{{ article.field_thumbnail.src }}"#}
+{#        alt="{{ article.field_thumbnail.alt }}"#}
+{#        title="{{ article.field_thumbnail.title }}"#}
+{#      />#}
+{#    {% endfor %}#}
+{#  </div>#}
 
 </article>

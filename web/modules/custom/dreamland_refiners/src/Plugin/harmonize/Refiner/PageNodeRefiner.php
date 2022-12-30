@@ -26,9 +26,9 @@ final class PageNodeRefiner extends RefinerBase {
    */
   public function refine(&$consignment, &$harmony, $object): void {
     // Similar alterations to what we did earlier, but in a refiner!
-    if (isset($consignment['field_featured_articles'])) {
-      $consignment['featured_article_count'] = count($consignment['field_featured_articles']);
-    }
+//    if (isset($consignment['field_featured_articles'])) {
+//      $consignment['featured_article_count'] = count($consignment['field_featured_articles']);
+//    }
   }
 
 }
